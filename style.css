@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    max-width: 600px;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.option {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.selected {
+    border: 2px solid #4CAF50;
+    background-color: #e7f9e7;
+}
+
+.correct {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.incorrect {
+    background-color: #f44336;
+    color: white;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.6;
+}
+.option.correct {
+    background-color: green;
+    color: white;
+}
+
+.option.incorrect {
+    background-color: red;
+    color: white;
+}
+
+.option.disabled {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+.option.selected {
+    border: 2px solid blue;
+}
+
+
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for screens */
+.container {
+    width: 90%;
+    max-width: 600px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Start Screen */
+.start-screen, .quiz-screen, .end-screen {
+    padding: 30px;
+    text-align: center;
+}
+
+/* Buttons */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 20px; /* Increased button text size */
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Question Box */
+.questions {
+    font-size: 28px; /* Increased question text size */
+    margin-bottom: 20px;
+    color: #333; /* Darker color for better readability */
+}
+
+/* Options */
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Increased gap between options */
+    background-color: #f8f9fa; /* Light background color for options */
+    padding: 20px; /* Padding around options */
+    border-radius: 8px; /* Rounded corners for options background */
+}
+
+.option {
+    background-color: #e9ecef;
+    padding: 20px; /* Increased padding for options */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 24px; /* Increased option text size */
+    color: #333; /* Darker color for better readability */
+}
+
+.option:hover {
+    background-color: #d1d1d1;
+    transform: scale(1.02); /* Slightly enlarge option on hover */
+}
+
+.option.selected {
+    background-color: #007bff;
+    color: white;
+}
+
+.option.correct {
+    background-color: #28a745;
+    color: white;
+}
+
+.option.incorrect {
+    background-color: #dc3545;
+    color: white;
+}
+
+.option.disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* Timer Display */
+#timerDisplay {
+    font-size: 22px; /* Increased timer text size */
+    margin-bottom: 20px;
+}
+
+/* End Screen */
+.final-score {
+    font-size: 28px; /* Increased final score text size */
+    margin-top: 20px;
+}
+
+/* Retry Button */
+.retryBtn {
+    margin-top: 20px;
+    font-size: 20px; /* Increased retry button text size */
+}
+body {
+    background-color: rgb(188, 188, 251); /* Light gray background */
+}
